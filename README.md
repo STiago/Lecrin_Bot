@@ -20,7 +20,7 @@ Respecto a la base de datos, para la obtención de los datos como se ha menciona
 
 ###Arquitectura
 
-Tras el estudio de los distintos tipos de arquitecturas software (Enlace arquitecturas: http://jj.github.io/CC/documentos/temas/Arquitecturas_para_la_nube) facilitados en la asignatura Cloud Computing, finalmente me he decantado por usar la arquitectura monolítica puesto que es la que mejor y de forma mas simple se adapta a este proyecto.
+Tras el estudio de los distintos tipos de [arquitecturas software](http://jj.github.io/CC/documentos/temas/Arquitecturas_para_la_nube) facilitados en la asignatura Cloud Computing, finalmente me he decantado por usar la arquitectura monolítica puesto que es la que mejor y de forma mas simple se adapta a este proyecto.
 
 Se utilizará una arquitectura monolítica ya que los grupos funcionales en los que se estructura el software son muy acoplados. Se caracteriza por ser una arquitectura rígida formada por la presentación, los datos y el procesamiento.
 
