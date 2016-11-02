@@ -26,7 +26,17 @@ La ventaja que supone usarla es que puede desplegarse de forma independiente. Va
 
 Los servicios van a ser principalmente una base de datos para el almacenamiento de la información de los eventos, conferencias etc. La API de bot de Telegram aprovechando con ello el potencial que ofrece este servicio y la api (si existiese) o el RSS para la página de la Universidad la cual nos permitirá obtener la información referente a los eventos en cuestión. Para el desarrollo se usará Python.
 
-Respecto a la base de datos, para la obtención de los datos como se ha mencionado anteriormente, se usará el web scraping de los datos de la web de donde se desea extraer la información, la API que proporcionana la propia web o bien RSS. Se elegirá una de las tres opciones cuando se implemente.
+Concretamente, para realizar las acciones se va a descomponer en los servicios que detallan a continuación:
+
+* Categorías
+* Noticias
+* Charlas y conferencias
+* Becas
+* Cursos
+* Bolsa de empleo y prácticas
+* Obtener estadisticas de los contenidos más y de las categorías más consultados.
+
+Respecto a las bases de datos, para la obtención de los datos como se ha mencionado anteriormente, se usará el web scraping de los datos de la web de donde se desea extraer la información, la API que proporcionana la propia web o bien RSS. Se elegirá una de las tres opciones cuando se implemente.
 
 ##Licencia
 
