@@ -16,7 +16,7 @@ Además, el bot permitirá realizar estadísticas de cuales son las categorías 
 
 ##Arquitectura
 
-Tras el estudio de los distintos tipos de arquitecturas software (Enlace arquitecturas: http://jj.github.io/CC/documentos/temas/Arquitecturas_para_la_nube) facilitados en la asignatura Cloud Computing, finalmente me he decantado por usar la arquitectura basada en microservicios ya que va a permitir desplegar de forma independiente cada servicio (funcionalidades que se distinguen y se pueden separar claramente), además va a permitir también que se trabaje cada uno de ellos de forma independiente.
+Tras el estudio de los distintos tipos de [arquitecturas software](http://jj.github.io/CC/documentos/temas/Arquitecturas_para_la_nube) facilitados en la asignatura Cloud Computing, finalmente me he decantado por usar la arquitectura basada en microservicios ya que va a permitir desplegar de forma independiente cada servicio (funcionalidades que se distinguen y se pueden separar claramente), además va a permitir también que se trabaje cada uno de ellos de forma independiente.
 
 Siguiendo esta estructura, el bot va a ser un sistema de mensajería centralizada donde los servicios van a estar separados y van a enviar peticiones a este sistema de paso de mensajes el cual va a servir estas peticiones.
 
