@@ -25,16 +25,16 @@ Se usará la API de bot de Telegram aprovechando con ello el potencial que ofrec
 
 Concretamente, para realizar las acciones se va a descomponer en los servicios que detallan a continuación:
 
-### Gestión de categorías
+#### * Gestión de categorías
 Se almacenará la información correspondiente sobre las categorías que se pueden consultar. Para ello usaré una base de datos MySQL.
 
-### Gestión de contenidos
+#### * Gestión de contenidos
 Mostrará los contenidos de la página principal de la ETSIIT, estos contenidos (en HTML, CSS y en JS por ejemplo) a su vez, podrán subdividirse en otros servicios por ejemplo en gestión de noticias, gestión de becas, gestión de bolsa de empleo, etc. Se almacenará la información correspondiente a cada categoría (Noticias, Charlas y conferencias, Becas, Cursos, Bolsa de empleo y prácticas), para ello se va a usar una base de datos MongoDB. 
 
-### Obtener estadisticas de los contenidos más y de las categorías más consultados.
+#### * Obtener estadisticas de los contenidos más y de las categorías más consultados.
 EL objetivo de este servicio es obtener la información de preferencias de los usuarios que consultan las categorías, todo ello desde las bases de datos.
 
-###Gestión de errores
+#### * Gestión de errores
 Consiste en la monitorización de los posibles errores que surjan con el objetivo de darles solución rápidamente.
 
 Respecto a las bases de datos, para la obtención de los datos como se ha mencionado anteriormente, se usará el web scraping de los datos de la web de donde se desea extraer la información o bien RSS. Se elegirá una de las dos opciones cuando se implemente.
