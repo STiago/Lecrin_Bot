@@ -39,6 +39,22 @@ Consiste en la monitorización de los posibles errores que surjan con el objetiv
 
 Respecto a las bases de datos, para la obtención de los datos como se ha mencionado anteriormente, se usará el web scraping de los datos de la web de donde se desea extraer la información o bien RSS. Se elegirá una de las dos opciones cuando se implemente.
 
+## Provisionamiento
+
+Para realizar el despliegue del sistema en la nube finalmente se va Ubuntu Server con la versión 14.04 en Amazon Web Services (AWS) aunque pude funcionar en otros sistemas los cuales pueden requerir algunas modificaciones para su buen funcionamiento.
+
+Se han elegido como sistemas de provisionamiento Ansible y Chef.
+
+#### Ansible
+
+Las principales razones por las que se ha elegido Ansible son por la gran flexibilidad que tiene y por el extenso numero de opciones que nos ofrece. Para más información consulte el siguiente [enlace](http://).
+
+
+#### Chef
+
+La razón por la que se ha seleccionado chef para provisionar el proyecto es por su gran uso en la actualidad y su sencillez. Puede encontrar más información en el siguiente [enlace](http://).
+
+
 ##Licencia
 
 El software está sujeto a la licencia GNU GPL v3.
