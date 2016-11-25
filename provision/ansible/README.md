@@ -16,7 +16,7 @@ aws ec2 create-key-pair --key-name MyKeyPair --query 'KeyMaterial' --output text
 
 Seguidamente creamos el fichero donde vana ir las herramientas y los paquetes que se desean instalar, también añadimos las órdenes que deseamos que se ejecuten. Todo ello se va a introducir en el fichero "playbook.yml" como se muestra a continuación:
 
-![Playbook](https://github.com/STiago/Pictures/blob/master/4ansible.png)
+![Playbook](https://github.com/STiago/Pictures/blob/master/playbookansible.png)
 
 Ahora, vamos a crearnos un fichero en el cual especificaremos las herramientas y paquetes que se van a instalar, así como las órdenes que queremos que se ejecuten. El archivo debe llamarse playbook.yml , y el contenido del mismo, en mi caso, es el siguiente:
 
