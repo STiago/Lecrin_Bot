@@ -18,9 +18,8 @@ Seguidamente creamos el fichero donde vana ir las herramientas y los paquetes qu
 
 ![Playbook](https://github.com/STiago/Pictures/blob/master/playbookansible.png)
 
-Ahora, vamos a crearnos un fichero en el cual especificaremos las herramientas y paquetes que se van a instalar, así como las órdenes que queremos que se ejecuten. El archivo debe llamarse playbook.yml , y el contenido del mismo, en mi caso, es el siguiente:
 
-Finalmente tras realizar todos estos pasos solo tenemos que ejecutar la siguiente línea de comandos para provisionar la máquina`ansible-playbook -i ansible_hosts --private-key key.pem -b playbook.yml` como se muestra en la siguiente captura:
+Finalmente tras realizar todos estos pasos solo tenemos que ejecutar la siguiente línea de comandos para provisionar la máquina con ansible `ansible-playbook -i ansible_hosts --private-key key.pem -b playbook.yml` como se muestra en la siguiente captura:
 
 
 ![Provisionamiento](https://github.com/STiago/Pictures/blob/master/ansiblefin.png)
