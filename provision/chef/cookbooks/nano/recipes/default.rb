@@ -1,8 +1,8 @@
 package 'nano'
-directory '/home/victoria/Escritorio/MASTER/CC/Lecrin_Bot/provision/chef'
-file "/home/victoria/Escritorio/MASTER/CC/Lecrin_Bot/provision/chef/LEEME" do
-	owner "victoria"
-	group "victoria"
+directory '/home/ubuntu/Lecrin_Bot/provision/chef'
+file "/home/ubuntu/Lecrin_Bot/provision/chef/LEEME" do
+	owner "ubuntu"
+	group "ubuntu"
 	mode 00544
 	action :create
 	content "Directorio para documentos"

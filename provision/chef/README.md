@@ -23,9 +23,17 @@ Seguidamente instalamos git para poder clonar el repositorio haciendo `sudo apt-
 ![Imagen 4](https://github.com/STiago/Pictures/blob/master/chef23.png)
 
 
-Lo clonamos con `git clone nombrerespositorio` y finalmente provisionamos ejecutando `sudo chef-solo -c solo.rb`
+Lo clonamos con `git clone nombrerespositorio`.
 
-![Imagen 5](https://github.com/STiago/Pictures/blob/master/chef5.png)
+A continuación realizamos las modificaciones necesarias en los ficheros solo.rb y default.rb como se muestra en las siguientes capturas:
+
+![Imagen 5](https://github.com/STiago/Pictures/blob/master/chef30.png)
+
+![Imagen 6](https://github.com/STiago/Pictures/blob/master/chef31.png)
+
+Finalmente provisionamos ejecutando `sudo chef-solo -c solo.rb`
+
+![Imagen 7](https://github.com/STiago/Pictures/blob/master/cheffin.png)
 
 
 
