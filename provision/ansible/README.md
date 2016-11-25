@@ -13,9 +13,8 @@ Realizadas estas modificaciones, para conectarnos con la máquina virtual debemo
 
 aws ec2 create-key-pair --key-name MyKeyPair --query 'KeyMaterial' --output text > MyKeyPair.pem
 
-![Fichero key.pem](https://github.com/STiago/Pictures/blob/master/3ansible.png)
 
-Seguidamente creamos el fichero donde vana ir las herramientas y los paquetes que se desean instalar, también añadimos las órdenes que deseamos que se ejecuten. Todo ello se va a introducir en el fichero "playboo.yml" como se muestra a continuación:
+Seguidamente creamos el fichero donde vana ir las herramientas y los paquetes que se desean instalar, también añadimos las órdenes que deseamos que se ejecuten. Todo ello se va a introducir en el fichero "playbook.yml" como se muestra a continuación:
 
 ![Playbook](https://github.com/STiago/Pictures/blob/master/4ansible.png)
 
@@ -24,8 +23,7 @@ Ahora, vamos a crearnos un fichero en el cual especificaremos las herramientas y
 Finalmente tras realizar todos estos pasos solo tenemos que ejecutar la siguiente línea de comandos para provisionar la máquina`ansible-playbook -i ansible_hosts --private-key key.pem -b playbook.yml` como se muestra en la siguiente captura:
 
 
-![Provisionamiento](https://github.com/STiago/Pictures/blob/master/5ansible.png)
-
+![Provisionamiento](https://github.com/STiago/Pictures/blob/master/ansiblefin.png)
 
 
 
