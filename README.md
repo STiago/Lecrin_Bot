@@ -47,12 +47,12 @@ Se han elegido como sistemas de provisionamiento Ansible y Chef.
 
 #### Ansible
 
-Las principales razones por las que se ha elegido Ansible son por la gran flexibilidad que tiene y por el extenso numero de opciones que nos ofrece. Para más información consulte el siguiente [enlace](http://).
+Las principales razones por las que se ha elegido Ansible son por la gran flexibilidad que tiene y por el extenso numero de opciones que nos ofrece. Para más información consulte el siguiente [enlace](https://github.com/STiago/Lecrin_Bot/blob/master/provision/ansible/README.md).
 
 
 #### Chef
 
-La razón por la que se ha seleccionado chef para provisionar el proyecto es por su gran uso en la actualidad y su sencillez. Puede encontrar más información en el siguiente [enlace](http://).
+La razón por la que se ha seleccionado chef para provisionar el proyecto es por su gran uso en la actualidad y su sencillez. Puede encontrar más información en el siguiente [enlace](https://github.com/STiago/Lecrin_Bot/blob/master/provision/chef/README.md).
 
 
 ##Licencia
