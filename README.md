@@ -25,34 +25,45 @@ Se usará la API de bot de Telegram aprovechando con ello el potencial que ofrec
 
 Concretamente, para realizar las acciones se va a descomponer en los servicios que detallan a continuación:
 
-#### * Gestión de categorías
+#### Gestión de categorías
 Se almacenará la información correspondiente sobre las categorías que se pueden consultar. Para ello usaré una base de datos MySQL.
 
-#### * Gestión de contenidos
+#### Gestión de contenidos
 Mostrará los contenidos de la página principal de la ETSIIT, estos contenidos (en HTML, CSS y en JS por ejemplo) a su vez, podrán subdividirse en otros servicios por ejemplo en gestión de noticias, gestión de becas, gestión de bolsa de empleo, etc. Se almacenará la información correspondiente a cada categoría (Noticias, Charlas y conferencias, Becas, Cursos, Bolsa de empleo y prácticas), para ello se va a usar una base de datos MongoDB. 
 
-#### * Obtener estadisticas de los contenidos más y de las categorías más consultados.
+#### Obtener estadisticas de los contenidos más y de las categorías más consultados.
 EL objetivo de este servicio es obtener la información de preferencias de los usuarios que consultan las categorías, todo ello desde las bases de datos.
 
-#### * Gestión de errores
+#### Gestión de errores
 Consiste en la monitorización de los posibles errores que surjan con el objetivo de darles solución rápidamente.
 
 Respecto a las bases de datos, para la obtención de los datos como se ha mencionado anteriormente, se usará el web scraping de los datos de la web de donde se desea extraer la información o bien RSS. Se elegirá una de las dos opciones cuando se implemente.
 
-##Provisionamiento
+## Provisionamiento
 
 Para realizar el despliegue del sistema en la nube finalmente se va Ubuntu Server con la versión 14.04 en Amazon Web Services (AWS) aunque pude funcionar en otros sistemas los cuales pueden requerir algunas modificaciones para su buen funcionamiento.
 
 Se han elegido como sistemas de provisionamiento Ansible y Chef.
 
-#### *Ansible
+#### Ansible
 
-Las principales razones por las que se ha elegido Ansible son por la gran flexibilidad que tiene y por el extenso numero de opciones que nos ofrece. Para más información consulte el siguiente enlace.
+Las principales razones por las que se ha elegido Ansible son por la gran flexibilidad que tiene y por el extenso numero de opciones que nos ofrece. Para más información consulte el siguiente [enlace](https://github.com/STiago/Lecrin_Bot/blob/master/provision/ansible/README.md).
 
-#### *Chef
 
-La razón por la que se ha seleccionado chef para provisionar el proyecto es por su gran uso en la actualidad y su sencillez. Puede encontrar más información en el siguiente enlace.
+#### Chef
+
+La razón por la que se ha seleccionado chef para provisionar el proyecto es por su gran uso en la actualidad y su sencillez. Puede encontrar más información en el siguiente [enlace](https://github.com/STiago/Lecrin_Bot/blob/master/provision/chef/README.md).
+
+### Provisionamiento de otros compañeros
+
+La corrección del provisionamiento de otros compañeros se puede consultar en el siguiente enlace: https://github.com/STiago/Lecrin_Bot/blob/gh-pages/otros_provision.md
+
+## Orquestación
+
+Para la orquestación de las máquinas virtuales se ha usado Vagrant en su versión 1.8.7 y se han provisionado con Ansible. A continuación en el siguiente [enlace](https://github.com/STiago/Lecrin_Bot/blob/master/orquestacion/README.md) puede consultar de forma más detallada el procedimiento que se ha seguido.
+
 
 ##Licencia
 
 El software está sujeto a la licencia GNU GPL v3.
+
