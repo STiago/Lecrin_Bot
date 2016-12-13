@@ -2,6 +2,7 @@
 
 La orquestación funciona correctamente:
 
-[Issue]()
-
-![Imagen](https://github.com/STiago/Pictures/blob/master/f2.png)
+[Issue](https://github.com/pmmre/CineForYou/issues/25)
+![Imagen](https://github.com/STiago/Pictures/blob/master/otroorquestacion.png)
+![Imagen](https://github.com/STiago/Pictures/blob/master/otroorquestacion1.png)
+![Imagen](https://github.com/STiago/Pictures/blob/master/f1.png)
