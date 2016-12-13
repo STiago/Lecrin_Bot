@@ -60,7 +60,7 @@ La corrección del provisionamiento de otros compañeros se puede consultar en e
 
 ## Orquestación
 
-Para la orquestación de las máquinas virtuales se ha usado Vagrant en su versión 1.8.7 y se han provisionado con Ansible. A continuación en el siguiente [enlace](https://github.com/STiago/Lecrin_Bot/blob/master/orquestacion/README.md) puede consultar de forma más detallada el procedimiento que se ha seguido.
+Para la orquestación de las máquinas virtuales se ha usado Vagrant en su versión 1.8.7 y se han provisionado con Ansible como se vio en el apartado anterior. A continuación en el siguiente [enlace](https://github.com/STiago/Lecrin_Bot/blob/master/orquestacion/README.md) puede consultar de forma más detallada el procedimiento que se ha seguido.
 
 
 ##Licencia
