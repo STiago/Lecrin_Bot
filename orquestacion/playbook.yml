@@ -1,4 +1,4 @@
-- hosts: aws
+- hosts: user
   sudo: true
   remote_user: ubuntu
   tasks:
@@ -6,7 +6,9 @@
     apt: update_cache=yes
   - name: Install Pip
     apt: name=python-setuptools state=present
+  - name: Python
     apt: name=python-dev state=present
+  - name: Python2
     apt: name=python-pip state=present
   - name: Instalar MongoDB
     apt: name=mongodb state=present
