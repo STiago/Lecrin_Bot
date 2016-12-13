@@ -64,5 +64,5 @@ El resultado se puede apreciar en las siguientes capturas:
 
 ![Imagen](https://github.com/STiago/Pictures/blob/master/f2.png)
 
-![Imagen](https://github.com/STiago/Pictures/blob/master/f1.png)
+![Imagen](https://github.com/STiago/Pictures/blob/master/f3.png)
 

@@ -4,4 +4,4 @@ La orquestación funciona correctamente:
 
 [Issue]()
 
-![Imagen]()
+![Imagen](https://github.com/STiago/Pictures/blob/master/f2.png)
