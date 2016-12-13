@@ -24,7 +24,7 @@ Vagrant.configure(2) do |config|
 			aws.ami = "ami-1c4a046f"
 			aws.region = "eu-west-1"
 			aws.instance_type = "t2.micro"
-			aws.security_groups = ["launch-wizard-2"]
+			aws.security_groups = ['AWS_SECURITY_GROUP_NAME']
 
 			override.vm.box = "dummy"
 			override.ssh.username = "ubuntu"
