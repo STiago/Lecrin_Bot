@@ -25,11 +25,13 @@ En este directorio se habrá creado el fichero `Vagrantfile` al hacer `vagrant i
 vagrant up --provider=aws
 ```
 
-Para conectarse a las máquinas solo ha de hacer `vagrant ssh`, `vagrant ssh users` o `vagrant ssh events`.
+Para conectarse a las máquinas solo ha de hacer `vagrant ssh`.
 
 Si se desea destruir la instancia creada se ha de ejecutar `vagrant destroy` desde el directorio donde está el fichero Vagrantfile.
 
+![Imagen](https://github.com/STiago/Pictures/blob/master/f2.png)
 
+![Imagen](https://github.com/STiago/Pictures/blob/master/f1.png)
 
 
 
