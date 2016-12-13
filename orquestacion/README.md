@@ -5,8 +5,8 @@ Para realizar la práctica correctamente es necesario tener un usuario creado en
 Se ha de mencionar que se necesitan exportar las siguientes variables de entorno con sus valores los cuales van a ser consultados por Vagrant para el despliegue de la máquina virtual y el provisionamiento en AWS EC2. 
 
 ```
-export AWS_ACCESS_KEY_ID=[AccessKey]
-export AWS_SECRET_ACCESS_KEY=[SecretKey]
+export AWS_KEY=[AccessKey]
+export AWS_SECRET=[SecretKey]
 export AWS_SECURITY_GROUP_NAME=[SGName]
 export AWS_KEYNAME=[keyPairName]
 export AWS_KEY_PATH=[Path to your private key]
@@ -29,11 +29,7 @@ Para conectarse a las máquinas solo ha de hacer `vagrant ssh`.
 
 Si se desea destruir la instancia creada se ha de ejecutar `vagrant destroy` desde el directorio donde está el fichero Vagrantfile.
 
-El resultado se puede apreciar en las siguientes capturas:
 
-![Imagen](https://github.com/STiago/Pictures/blob/master/f2.png)
-
-![Imagen](https://github.com/STiago/Pictures/blob/master/f1.png)
 
 
 
