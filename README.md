@@ -54,13 +54,10 @@ Las principales razones por las que se ha elegido Ansible son por la gran flexib
 
 La razón por la que se ha seleccionado chef para provisionar el proyecto es por su gran uso en la actualidad y su sencillez. Puede encontrar más información en el siguiente [enlace](https://github.com/STiago/Lecrin_Bot/blob/master/provision/chef/README.md).
 
-### Provisionamiento de otros compañeros
-
-La corrección del provisionamiento de otros compañeros se puede consultar en el siguiente enlace: https://github.com/STiago/Lecrin_Bot/blob/gh-pages/otros_provision.md
 
 ## Orquestación
 
-Para la orquestación de las máquinas virtuales se ha usado Vagrant en su versión 1.8.7 y se han provisionado con Ansible como se vio en el apartado anterior. A continuación en el siguiente [enlace](https://github.com/STiago/Lecrin_Bot/blob/master/orquestacion/README.md) puede consultar de forma más detallada el procedimiento que se ha seguido.
+Para la orquestación de las máquinas virtuales se ha usado Vagrant en su versión 1.8.7 y se han provisionado con Ansible como se vio en el apartado anterior. A continuación en el siguiente [enlace](https://github.com/STiago/Lecrin_Bot/blob/gh-pages/orquestacion.md) puede consultar de forma más detallada el procedimiento que se ha seguido.
 
 
 ##Licencia
