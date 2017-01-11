@@ -61,7 +61,7 @@ Para la orquestación de las máquinas virtuales se ha usado Vagrant en su versi
 
 ## Docker
 
-Para poder consultar la informacion necesaria respecto a docker se ha de consultar el siguiente documento [Docker](https://github.com/STiago/Lecrin_Bot/blob/master/docker/README.md)
+Para poder consultar la informacion necesaria respecto a docker se ha de consultar el siguiente documento [Docker](https://github.com/STiago/Lecrin_Bot/blob/master/docker/README.md) y el repositorio de [Dockerhub](https://hub.docker.com/r/stiago/lecrin_bot/)
 
 ##Licencia
 
