@@ -66,6 +66,15 @@ Para la orquestación de las máquinas virtuales se ha usado Vagrant en su versi
 
 La corrección del provisionamiento de otros compañeros se puede consultar en el siguiente enlace: https://github.com/STiago/Lecrin_Bot/blob/gh-pages/orquestacion_otros.md
 
+## Docker
+
+Para el despliegue de un contenedor de dockerhub se han seguido los siguientes pasos que se especifican en el siguiente [documento](https://github.com/STiago/Lecrin_Bot/blob/gh-pages/docker.md)).
+
+
+### Docker de otro compañero
+
+La corrección de otro compañero ha se puede consultar en el siguiente enlace https://github.com/STiago/Lecrin_Bot/blob/gh-pages/docker_otros.md
+
 ##Licencia
 
 El software está sujeto a la licencia GNU GPL v3.
