@@ -23,3 +23,5 @@ Finalmente ya solo nos queda ejecutar el contenedor:
 ```
  sudo docker run -it stiago/lecrin_bot bash
 ```
+
+Si desea más información puede consultar el siguiente [documento](https://github.com/STiago/Lecrin_Bot/blob/gh-pages/docker.md).
