@@ -1,0 +1,8 @@
+title: Lecrin_Bot
+description: Repositorio creado para el master de Ingeniería Informática.
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-architect
+
+gems:
+  - jekyll-mentions
