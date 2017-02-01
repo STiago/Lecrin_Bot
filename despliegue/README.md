@@ -55,6 +55,9 @@ A continuación se muestra un pequeño frangmento del playbook:
 Tras haber realizado el provisionamiento con Ansible, damos paso a usar Vagrant con este playbook.yml con el fin de provisionar las máquinar virtuales.
 
 Se ha de mencionar que dicho playbook va a ser el que nos instale Docker con todos sus paquetes.
+El contenedor creado se ha basado en el de frolvlad con python3 en Alpine,que se puede consultar en este [enlace](https://hub.docker.com/r/frolvlad/alpine-python3/).
+
+Mi contenedor creado se encuentra en [DockerHub](https://hub.docker.com/r/stiago/alpine-mongodb-telegrambot/)
 
 
 

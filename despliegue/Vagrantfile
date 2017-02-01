@@ -1,0 +1,33 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# All Vagrant configuration is done below. The "2" in Vagrant.configure
+# configures the configuration version (we support older styles for
+# backwards compatibility). Please don't change it unless you know what
+# you're doing.
+Vagrant.configure(2) do |config|
+
+	config.vm.define :user do |users|
+		users.vm.host_name = "user"
+        users.vm.provision "ansible" do |ansible|
+            ansible.sudo = true
+			ansible.playbook = "playbook.yml"
+            ansible.verbose = "v"
+            ansible.host_key_checking = false
+		end
+    end
+	config.vm.provider :aws do |aws, override|
+			aws.access_key_id = ENV['AWS_KEY']
+			aws.secret_access_key = ENV['AWS_SECRET']
+			aws.keypair_name = ENV['AWS_KEYNAME']
+
+			aws.ami = "ami-1c4a046f"
+			aws.region = "eu-west-1"
+			aws.instance_type = "t2.micro"
+			aws.security_groups = ['AWS_SECURITY_GROUP_NAME']
+
+			override.vm.box = "dummy"
+			override.ssh.username = "ubuntu"
+			override.ssh.private_key_path = ENV['AWS_KEYPATH']	
+	 end
+end
