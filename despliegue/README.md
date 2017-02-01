@@ -28,10 +28,29 @@ Se ha de mencionar que para conectar la base de datos del microservicio, se ha d
 
 Por lo que finalmente creamos nuestro fichero Dockerfile el cual contendrá lo siguiente:
 
+```
+FROM frolvlad/alpine-python3
+
+MAINTAINER Maria Victoria Santiago Alcala <victoriasantiagoalcala@gmail.com>
+
+RUN pip install --upgrade pip
+RUN pip install PyMongo
+RUN pip install pyTelegramBotAPI
+RUN pip install mongoengine
+``` 
+
+Finalmente tendremos nuestro repositorio en DockerHub:
+
+![Imagen docker](https://github.com/STiago/Pictures/blob/master/hito5/5-alpine.png)
+
 
 ### Provisionamiento con Ansible, Orquestación con Vagrant y Contenedores Docker.
 
 Pare llevar a cabo el provisionamiento se ha usado Ansible y puesto que las máquinas virtuales que se van a usar van a tener las mismas tecnologías se va a crear un único playbook.yml para todas en vez de hacer tres playbooks.
+
+A continuación se muestra un pequeño frangmento del playbook:
+
+![Imagen ansible](https://github.com/STiago/Pictures/blob/master/hito5/4-playbook.png)
 
 Tras haber realizado el provisionamiento con Ansible, damos paso a usar Vagrant con este playbook.yml con el fin de provisionar las máquinar virtuales.
 
