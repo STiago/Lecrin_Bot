@@ -7,6 +7,6 @@ MAINTAINER Maria Victoria Santiago Alcala <victoriasantiagoalcala@gmail.com>
 #RUN sudo apt-get -y update
 
 RUN pip install --upgrade pip
-RUN apt-get -y install mongoDB
+RUN pip install PyMongo
 RUN pip install pyTelegramBotAPI
 RUN pip install mongoengine
