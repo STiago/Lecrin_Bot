@@ -1,0 +1,48 @@
+- hosts: all
+  sudo: true
+  
+  tasks:
+  - name: Update cache
+    apt: update_cache=yes
+
+  - name: Install Pip
+    apt: name=python-setuptools state=present
+    apt: name=python-dev state=present
+    apt: name=python-pip state=present
+
+  - name: Install Curl
+    apt: name=curl
+
+  - name:name: Installl certificates https
+    apt: name=apt-transport-https
+    apt: name=ca-certificates
+
+  - name: install linux-image-extra-virtual
+    apt: name=linux-image-extra-virtual 
+    apt: name=linux-image-extra-4.4.0-53-generic
+
+#Instalar docker Referencia: https://docs.docker.com/engine/installation/linux/ubuntu/
+  - name: Docker key
+    shell: curl -fsSL https://yum.dockerproject.org/gpg | apt-key add -
+
+  - name: Add repository
+    shell: add-apt-repository "deb https://apt.dockerproject.org/repo/ ubuntu-xenial  main"
+
+  - name: Update cache
+    apt: update_cache=yes
+
+  - name: Install docker engine
+    apt: name=docker-engine
+
+#Descargar contenedor de dockerhub
+  - name: Download container
+    shell: docker pull stiago/alpine-mongodb-telegrambot
+
+#Arrancar contenedor
+  - name: starts docker container
+    shell: docker run -itd --name contenedorFestivales  stiago/alpine-mongodb-telegrambot
+
+
+
+
+

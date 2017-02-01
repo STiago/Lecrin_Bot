@@ -1,4 +1,4 @@
-## Despliegue
+## Despliegue de la infraestructura
 
 En este hito se va a describir el despliegue de la infraestructura virtual realizado para la aplicación en el cual se han usado todas las tecnologías que se han ido tratando en los puntos anteriores.
 
@@ -25,5 +25,18 @@ En esta captura podemos comprobar que nuestra base de datos ha sido creada corre
 ![Imagen mlab](https://github.com/STiago/Pictures/blob/master/hito5/3-mlablecrinbot.png)
 
 Se ha de mencionar que para conectar la base de datos del microservicio, se ha de copiar el enlace que se nos facilita de conexión en el código del microservicio usando mongoengine de MongoDB.
-Este driver ya ha sido instalado en el contenedor.
+
+Por lo que finalmente creamos nuestro fichero Dockerfile el cual contendrá lo siguiente:
+
+
+### Provisionamiento con Ansible, Orquestación con Vagrant y Contenedores Docker.
+
+Pare llevar a cabo el provisionamiento se ha usado Ansible y puesto que las máquinas virtuales que se van a usar van a tener las mismas tecnologías se va a crear un único playbook.yml para todas en vez de hacer tres playbooks.
+
+Tras haber realizado el provisionamiento con Ansible, damos paso a usar Vagrant con este playbook.yml con el fin de provisionar las máquinar virtuales.
+
+Se ha de mencionar que dicho playbook va a ser el que nos instale Docker con todos sus paquetes.
+
+
+
 
