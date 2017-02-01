@@ -8,4 +8,4 @@ En primer lugar tenemos el servicio de "Categorias","Gestión de contenidos de n
 
 Se ha usado una maquina Ubuntu 16.04 de AWS como se muestra a continuación:
 
-[Imagen ubuntu](https://github.com/STiago/Pictures/blob/master/hito5/1--ubuntu16-04.png)
+![Imagen ubuntu](https://github.com/STiago/Pictures/blob/master/hito5/1--ubuntu16-04.png)
