@@ -24,6 +24,6 @@ En esta captura podemos comprobar que nuestra base de datos ha sido creada corre
 
 ![Imagen mlab](https://github.com/STiago/Pictures/blob/master/hito5/3-mlablecrinbot.png)
 
-Se ha de mencionar que para conectar la base de datos del microservicio, se ha de copiar el enlace que se nos facilita de conexión en el código del microservicio usando el driver mongoose de MongoDB.
+Se ha de mencionar que para conectar la base de datos del microservicio, se ha de copiar el enlace que se nos facilita de conexión en el código del microservicio usando mongoengine de MongoDB.
 Este driver ya ha sido instalado en el contenedor.
 
