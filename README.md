@@ -59,9 +59,17 @@ La razón por la que se ha seleccionado chef para provisionar el proyecto es por
 
 Para la orquestación de las máquinas virtuales se ha usado Vagrant en su versión 1.8.7 y se han provisionado con Ansible como se vio en el apartado anterior. A continuación en el siguiente [enlace](https://github.com/STiago/Lecrin_Bot/blob/gh-pages/orquestacion.md) puede consultar de forma más detallada el procedimiento que se ha seguido.
 
+
 ## Docker
 
 Para poder consultar la informacion necesaria respecto a docker se ha de consultar el siguiente documento [Docker](https://github.com/STiago/Lecrin_Bot/blob/master/docker/README.md) y el repositorio de [Dockerhub](https://hub.docker.com/r/stiago/lecrin_bot/)
+
+
+## Despliegue
+
+En esta sección se ha realizado el despliegue de la aplicacion usando....
+Para más información consulte el siguiente [documento]().
+
 
 ##Licencia
 
