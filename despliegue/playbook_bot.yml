@@ -25,4 +25,4 @@
     apt: name=docker-engine
 
   - name: Descarga del contenedor
-    shell: docker pull stiago/lecrin_bot-bot
+    shell: docker pull stiago/lecrinbot-bot
