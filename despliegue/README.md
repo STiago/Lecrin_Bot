@@ -73,6 +73,8 @@ Se ha de mencionar que dichos playbook va a ser el que nos instale Docker con to
 
 Y cada uno de los playbooks [aqui](https://github.com/STiago/Lecrin_Bot/tree/master/despliegue) y el [Vagrantfile](https://github.com/STiago/Lecrin_Bot/blob/master/despliegue/Vagrantfile).
 
+Finalente ya solo tenemos que hacer en la consola vagrant up --provider=aws para desplegar todas las máquinas.
+
 
 
 
