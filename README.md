@@ -67,7 +67,7 @@ Para poder consultar la informacion necesaria respecto a docker se ha de consult
 
 ## Despliegue
 
-En esta sección se ha realizado el despliegue de la aplicacion usando....
+En esta sección se ha realizado el despliegue de la aplicacion usando todas las herramientas que se han visto en los anteriores puntos.
 Para más información consulte el siguiente [documento](https://github.com/STiago/Lecrin_Bot/blob/master/despliegue/README.md).
 
 
