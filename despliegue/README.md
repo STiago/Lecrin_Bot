@@ -71,6 +71,9 @@ Se ha de mencionar que dichos playbook va a ser el que nos instale Docker con to
 - El contenedor de Estadisticas se encuentra [aquí](https://hub.docker.com/r/stiago/lecrinbot-estadisticas/).
 - El contenedor del Bot se encuentra [aquí](https://hub.docker.com/r/stiago/lecrinbot-bot/).
 
+![Imagen contenedores](https://github.com/STiago/Pictures/blob/master/hito5/7-dockerhub.png)
+
+
 Y cada uno de los playbooks [aqui](https://github.com/STiago/Lecrin_Bot/tree/master/despliegue) y el [Vagrantfile](https://github.com/STiago/Lecrin_Bot/blob/master/despliegue/Vagrantfile).
 
 Finalente ya solo tenemos que hacer en la consola vagrant up --provider=aws para desplegar todas las máquinas.
