@@ -6,6 +6,12 @@ La aplicación está dividida en varios microservicios para los cuales se han us
 
 En primer lugar tenemos el servicio de "Categorias","Gestión de contenidos de noticias" y "Gestión de estadísticas".
 
+Para "Gestion de contenidos de noticias" y para "Categorias" se va a usar mLab puesto que se van a usar bases de datos de MongoDB por lo que hay que instalar la libreria de mlab.
+
+Mientras que para la "Gestión de estadísticas" se va a usar una base de datos de MongoDB y la libreria ploty  para generar los gráficos,
+
+Finalmente para el Bot se ha usado papertrail, por lo que las librerias necesarias para el uso del sistema de log, vienen instaladas por defecto en python, por lo que no es necesario instalarlas.
+
 Se ha usado una maquina Ubuntu 16.04 de AWS como se muestra a continuación:
 
 ![Imagen ubuntu](https://github.com/STiago/Pictures/blob/master/hito5/1--ubuntu16-04.png)
