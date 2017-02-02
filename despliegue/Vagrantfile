@@ -21,7 +21,7 @@ Vagrant.configure(2) do |config|
 			aws.secret_access_key = ENV['AWS_SECRET']
 			aws.keypair_name = ENV['AWS_KEYNAME']
 
-			aws.ami = "ami-1c4a046f"
+			aws.ami = "ami-6f587e1c"
 			aws.region = "eu-west-1"
 			aws.instance_type = "t2.micro"
 			aws.security_groups = ['AWS_SECURITY_GROUP_NAME']
@@ -30,4 +30,97 @@ Vagrant.configure(2) do |config|
 			override.ssh.username = "ubuntu"
 			override.ssh.private_key_path = ENV['AWS_KEYPATH']	
 	 end
+end
+
+##############################################################################
+Vagrant.configure("2") do |config|
+  # The most common configuration options are documented and commented below.
+  # For a complete reference, please see the online documentation at
+  # https://docs.vagrantup.com.
+
+  # Every Vagrant development environment requires a box. You can search for
+  # boxes at https://atlas.hashicorp.com/search.
+
+
+   config.vm.define "bot" do |maquina_bot|
+      bot.vm.box = "aws"
+        bot.vm.provider :aws do |aws, override|
+        aws.access_key_id = ENV['AWS_KEY']
+        aws.secret_access_key = ENV['AWS_SECRET']
+        aws.keypair_name = ENV['AWS_KEYNAME']
+
+
+        aws.tags = {
+            'Name' => 'Lecrin_Bot bot',
+            'Environment' => 'vagrant-sandbox'
+        } 
+
+        aws.region = "eu-west-1"
+        aws.ami = "ami-1081b807"
+        aws.instance_type = "t2.micro"
+        aws.security_groups = ['AWS_SECURITY_GROUP_NAME'] #"vagrant"
+
+        override.ssh.username = "ubuntu"  
+        override.ssh.private_key_path = ENV['AWS_KEYPATH']
+      end
+
+      bot.vm.provision :ansible do |ansible|
+        ansible.playbook = "playbook-bot.yml"
+      end
+   end
+
+   config.vm.define "categorias-noticias" do |maquina_academico_gestion|
+      categorias-noticias.vm.box = "aws"
+        categorias-noticias.vm.provider :aws do |aws, override|
+        aws.access_key_id = ENV['AWS_KEY']
+        aws.secret_access_key = ENV['AWS_SECRET']
+        aws.keypair_name = ENV['AWS_KEYNAME']
+
+
+        aws.tags = {
+            'Name' => 'Lecrin_Bot categorias-noticias',
+            'Environment' => 'vagrant-sandbox'
+        } 
+
+        aws.region = "eu-west-1"
+        aws.ami = "ami-1081b807"
+        aws.instance_type = "t2.micro"
+        aws.security_groups = ['AWS_SECURITY_GROUP_NAME']
+
+        override.ssh.username = "ubuntu"  
+        override.ssh.private_key_path = ENV['AWS_KEYPATH']
+      end
+
+      categorias-noticias.vm.provision :ansible do |ansible|
+        ansible.playbook = "playbook-categorias-noticias.yml"
+      end
+   end
+   
+   config.vm.define "estadisticas" do |maquina_gastos|
+      estadisticas.vm.box = "aws"
+        estadisticas.vm.provider :aws do |aws, override|
+        aws.access_key_id = ENV['AWS_KEY']
+        aws.secret_access_key = ENV['AWS_SECRET']
+        aws.keypair_name = ENV['AWS_KEYNAME']
+
+
+        aws.tags = {
+            'Name' => 'Lecrin_Bot estadisticas',
+            'Environment' => 'vagrant-sandbox'
+        } 
+
+        aws.region = "eu-west-1"
+        aws.ami = "ami-1081b807"
+        aws.instance_type = "t2.micro"
+        aws.security_groups = ['AWS_SECURITY_GROUP_NAME']
+
+        override.ssh.username = "ubuntu" 
+        override.ssh.private_key_path = ENV['AWS_KEYPATH']
+      end
+
+      estadisticas.vm.provision :ansible do |ansible|
+        ansible.playbook = "playbook-estadisticas.yml"
+      end
+   end
+
 end

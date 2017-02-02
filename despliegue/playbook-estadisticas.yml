@@ -1,0 +1,28 @@
+- hosts: all
+  sudo: true
+  tasks:
+  - name: Instalamos los paquetes extra de imágenes
+    apt: name=linux-image-extra-4.4.0-53-generic
+    apt: name=linux-image-extra-virtual
+
+  - name: Instalacion curl
+    apt: name=curl
+
+  - name: Instalacion certificados apt https
+    apt: name=apt-transport-https
+    apt: name=ca-certificates
+
+  - name: Clave de docker
+    shell: curl -fsSL https://yum.dockerproject.org/gpg | apt-key add -
+
+  - name: Agregar repositorio estable
+    shell: add-apt-repository "deb https://apt.dockerproject.org/repo/ ubuntu-xenial  main"
+
+  - name: Actualizar cache
+    apt: update_cache=yes
+
+  - name: Instalacion docker engine
+    apt: name=docker-engine
+
+  - name: Descarga del contenedor
+    shell: docker pull stiago/lecrinbot-estadisticas
