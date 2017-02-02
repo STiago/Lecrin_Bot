@@ -39,6 +39,8 @@ RUN pip install pyTelegramBotAPI
 RUN pip install mongoengine
 ``` 
 
+Se han creado tres contenedores, uno para el bot otro para las "Categorias"y la"Gestión de contenidos de noticias" que al tener las mismas tecnologias se va a hacer igual y otro para la "Gestion de estadísticas.
+
 Finalmente tendremos nuestro repositorio en DockerHub:
 
 ![Imagen docker](https://github.com/STiago/Pictures/blob/master/hito5/5-alpine.png)
@@ -46,9 +48,9 @@ Finalmente tendremos nuestro repositorio en DockerHub:
 
 ### Provisionamiento con Ansible, Orquestación con Vagrant y Contenedores Docker.
 
-Pare llevar a cabo el provisionamiento se ha usado Ansible y puesto que las máquinas virtuales que se van a usar van a tener las mismas tecnologías se va a crear un único playbook.yml para todas en vez de hacer tres playbooks.
+Pare llevar a cabo el provisionamiento se ha usado Ansible y puesto que las máquinas virtuales que se van a usar van a tener distintas tecnologías se van a crear varios playbook.yml 
 
-A continuación se muestra un pequeño frangmento del playbook:
+A continuación se muestra un pequeño frangmento de uno de los playbook:
 
 ![Imagen ansible](https://github.com/STiago/Pictures/blob/master/hito5/4-playbook.png)
 
