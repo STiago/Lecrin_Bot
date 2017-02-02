@@ -66,9 +66,12 @@ A continuación se muestra un pequeño frangmento de uno de los playbook:
 Tras haber realizado el provisionamiento con Ansible, damos paso a usar Vagrant con este playbook.yml con el fin de provisionar las máquinar virtuales cada una con el suyo.
 
 Se ha de mencionar que dichos playbook va a ser el que nos instale Docker con todos sus paquetes.
-El contenedor creado se ha basado en el de frolvlad con python3 en Alpine,que se puede consultar en este [enlace](https://hub.docker.com/r/frolvlad/alpine-python3/).
 
-Mi contenedor creado se encuentra en [DockerHub](https://hub.docker.com/r/stiago/alpine-mongodb-telegrambot/)
+- El contenedor de Categorias y gestion de contenidos de noticias se encuentra [aquí](https://hub.docker.com/r/stiago/lecrinbot-categorias-noticias/).
+- El contenedor de Estadisticas se encuentra [aquí](https://hub.docker.com/r/stiago/lecrinbot-estadisticas/).
+- El contenedor del Bot se encuentra [aquí](https://hub.docker.com/r/stiago/lecrinbot-bot/).
+
+Y cada uno de los playbooks [aqui](https://github.com/STiago/Lecrin_Bot/tree/master/despliegue) y el [Vagrantfile](https://github.com/STiago/Lecrin_Bot/blob/master/despliegue/Vagrantfile).
 
 
 
