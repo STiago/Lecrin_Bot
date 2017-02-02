@@ -12,6 +12,9 @@ Mientras que para la "Gestión de estadísticas" se va a usar una base de datos 
 
 Finalmente para el Bot se ha usado papertrail, por lo que las librerias necesarias para el uso del sistema de log, vienen instaladas por defecto en python, por lo que no es necesario instalarlas.
 
+![Imagen ubuntu](https://github.com/STiago/Pictures/blob/master/hito5/6-papertrailapp.png)
+
+
 Se ha usado una maquina Ubuntu 16.04 de AWS como se muestra a continuación:
 
 ![Imagen ubuntu](https://github.com/STiago/Pictures/blob/master/hito5/1--ubuntu16-04.png)
@@ -60,9 +63,9 @@ A continuación se muestra un pequeño frangmento de uno de los playbook:
 
 ![Imagen ansible](https://github.com/STiago/Pictures/blob/master/hito5/4-playbook.png)
 
-Tras haber realizado el provisionamiento con Ansible, damos paso a usar Vagrant con este playbook.yml con el fin de provisionar las máquinar virtuales.
+Tras haber realizado el provisionamiento con Ansible, damos paso a usar Vagrant con este playbook.yml con el fin de provisionar las máquinar virtuales cada una con el suyo.
 
-Se ha de mencionar que dicho playbook va a ser el que nos instale Docker con todos sus paquetes.
+Se ha de mencionar que dichos playbook va a ser el que nos instale Docker con todos sus paquetes.
 El contenedor creado se ha basado en el de frolvlad con python3 en Alpine,que se puede consultar en este [enlace](https://hub.docker.com/r/frolvlad/alpine-python3/).
 
 Mi contenedor creado se encuentra en [DockerHub](https://hub.docker.com/r/stiago/alpine-mongodb-telegrambot/)
