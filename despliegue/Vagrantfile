@@ -16,8 +16,8 @@ Vagrant.configure("2") do |config|
   # boxes at https://atlas.hashicorp.com/search.
 
 
-   config.vm.define "bot" do |maquina_bot|
-      bot.vm.box = "aws"
+   config.vm.define "bot" do |bot|
+      bot.vm.box = "bot"
         bot.vm.provider :aws do |aws, override|
         aws.access_key_id = ENV['AWS_KEY']
         aws.secret_access_key = ENV['AWS_SECRET']
@@ -30,7 +30,7 @@ Vagrant.configure("2") do |config|
         } 
 
         aws.region = "eu-west-1"
-        aws.ami = "ami-1081b807"
+        aws.ami = "ami-a192bad2"
         aws.instance_type = "t2.micro"
         aws.security_groups = ['AWS_SECURITY_GROUP_NAME'] #"vagrant"
 
@@ -40,12 +40,13 @@ Vagrant.configure("2") do |config|
 
       bot.vm.provision :ansible do |ansible|
         ansible.playbook = "playbook-bot.yml"
+        ansible.verbose = "v"
       end
    end
 
-   config.vm.define "categorias-noticias" do |maquina_academico_gestion|
-      categorias-noticias.vm.box = "aws"
-        categorias-noticias.vm.provider :aws do |aws, override|
+   config.vm.define "categorias" do |categorias|
+      categorias.vm.box = "categorias"
+        categorias.vm.provider :aws do |aws, override|
         aws.access_key_id = ENV['AWS_KEY']
         aws.secret_access_key = ENV['AWS_SECRET']
         aws.keypair_name = ENV['AWS_KEYNAME']
@@ -57,7 +58,7 @@ Vagrant.configure("2") do |config|
         } 
 
         aws.region = "eu-west-1"
-        aws.ami = "ami-1081b807"
+        aws.ami = "ami-a192bad2"
         aws.instance_type = "t2.micro"
         aws.security_groups = ['AWS_SECURITY_GROUP_NAME']
 
@@ -65,13 +66,14 @@ Vagrant.configure("2") do |config|
         override.ssh.private_key_path = ENV['AWS_KEYPATH']
       end
 
-      categorias-noticias.vm.provision :ansible do |ansible|
+      categorias.vm.provision :ansible do |ansible|
         ansible.playbook = "playbook-categorias-noticias.yml"
+        ansible.verbose = "v"
       end
    end
    
-   config.vm.define "estadisticas" do |maquina_gastos|
-      estadisticas.vm.box = "aws"
+   config.vm.define "estadisticas" do |estadisticas|
+      estadisticas.vm.box = "estadisticas"
         estadisticas.vm.provider :aws do |aws, override|
         aws.access_key_id = ENV['AWS_KEY']
         aws.secret_access_key = ENV['AWS_SECRET']
@@ -84,7 +86,7 @@ Vagrant.configure("2") do |config|
         } 
 
         aws.region = "eu-west-1"
-        aws.ami = "ami-1081b807"
+        aws.ami = "ami-a192bad2"
         aws.instance_type = "t2.micro"
         aws.security_groups = ['AWS_SECURITY_GROUP_NAME']
 
@@ -94,6 +96,7 @@ Vagrant.configure("2") do |config|
 
       estadisticas.vm.provision :ansible do |ansible|
         ansible.playbook = "playbook-estadisticas.yml"
+        ansible.verbose = "v"
       end
    end
 
