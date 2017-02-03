@@ -8,7 +8,7 @@ En primer lugar tenemos el servicio de "Categorias","Gestión de contenidos de n
 
 Para "Gestion de contenidos de noticias" y para "Categorias" se va a usar mLab puesto que se van a usar bases de datos de MongoDB por lo que hay que instalar la libreria de mlab.
 
-Mientras que para la "Gestión de estadísticas" se va a usar una base de datos de MongoDB y la libreria ploty  para generar los gráficos,
+Mientras que para la "Gestión de estadísticas" se va a usar una base de datos de MongoDB y la libreria ploty  para generar los gráficos.
 
 Finalmente para el Bot se ha usado papertrail, por lo que las librerias necesarias para el uso del sistema de log, vienen instaladas por defecto en python, por lo que no es necesario instalarlas.
 
