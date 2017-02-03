@@ -62,13 +62,13 @@ Para la orquestación de las máquinas virtuales se ha usado Vagrant en su versi
 
 ## Docker
 
-Para poder consultar la informacion necesaria respecto a docker se ha de consultar el siguiente documento [Docker](https://github.com/STiago/Lecrin_Bot/blob/master/docker/README.md) y el repositorio de [Dockerhub](https://hub.docker.com/r/stiago/lecrin_bot/)
+Para poder consultar la informacion necesaria respecto a docker se ha de consultar el siguiente documento [Docker](https://github.com/STiago/Lecrin_Bot/blob/master/docker/README.md) y el repositorio de [Dockerhub](https://hub.docker.com/r/stiago/lecrin_bot/).
 
 
 ## Despliegue
 
 En esta sección se ha realizado el despliegue de la aplicacion usando todas las herramientas que se han visto en los anteriores puntos.
-Para más información consulte el siguiente [documento](https://github.com/STiago/Lecrin_Bot/blob/master/despliegue/README.md).
+Para más información consulte el siguiente [documento](https://github.com/STiago/Lecrin_Bot/blob/master/despliegue/README.md) y en los respositorios de [Dockerhub](https://hub.docker.com/r/stiago/).
 
 
 ##Licencia
