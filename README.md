@@ -75,6 +75,13 @@ Para el despliegue de un contenedor de dockerhub se han seguido los siguientes p
 
 La corrección de otro compañero ha se puede consultar en el siguiente enlace https://github.com/STiago/Lecrin_Bot/blob/gh-pages/docker_otros.md
 
+
+## Despliegue
+
+En esta sección se ha realizado el despliegue de la aplicacion usando todas las herramientas que se han visto en los anteriores puntos.
+Para más información consulte el siguiente [documento](https://github.com/STiago/Lecrin_Bot/blob/master/despliegue/README.md) y en los respositorios de [Dockerhub](https://hub.docker.com/r/stiago/).
+
+
 ## Licencia
 
 El software está sujeto a la licencia GNU GPL v3.
