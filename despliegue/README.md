@@ -78,9 +78,13 @@ Y cada uno de los playbooks [aqui](https://github.com/STiago/Lecrin_Bot/tree/mas
 
 Finalente ya solo tenemos que hacer en la consola vagrant up --provider=aws para desplegar todas las máquinas.
 
+![Imagen contenedores](https://github.com/STiago/Pictures/blob/master/hito5/11-a9.png)
+
 ![Imagen contenedores](https://github.com/STiago/Pictures/blob/master/hito5/9-shell.png)
 
 ![Imagen contenedores](https://github.com/STiago/Pictures/blob/master/hito5/10-result.png)
+
+![Imagen contenedores](https://github.com/STiago/Pictures/blob/master/hito5/11-fin.png)
 
 ![Imagen contenedores](https://github.com/STiago/Pictures/blob/master/hito5/8-aws.png)
 
